@@ -2,3 +2,22 @@ body {
     background-color: rgb(0, 0, 0);
     color: white;
 }
+
+p{
+    background-color: blue;
+}
+
+a{
+    background-color: brown;
+}
+
+.red{
+    color: red;
+
+}
+.bg-yellow{
+    background-color: yellow;
+}
+#firstdiv{
+
+}
