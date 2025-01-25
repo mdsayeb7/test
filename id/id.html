@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>হোমওয়ার্ক ট্র্যাকার</title>
+    <meta name="description" content="Student homework tracking system">
+    <style>
+        .main {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            overflow: hidden;
+            background-color: #fff;
+
+        }
+
+        .todaysTasks {
+            border-left: 4px solid #000;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: rgb(241, 241, 241);
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 650px;
+            display: block;
+            margin:auto;
+        }
+
+        .tommorow{
+            border-left: 4px solid #000;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: rgb(241, 241, 241);
+            margin-left: 20px;
+            margin-top: 2000px;
+            width: 650px;
+            display: block;
+            margin:auto;
+        }
+
+        .card {
+            background-color: bisque;
+            box-shadow: #000;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            
+        }
+
+        .subject {
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .task {
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+        .pending {
+            background-color: yellow;
+            color: #000;
+        }
+
+        .science {
+            background-color: aqua;
+        }
+
+        .bangla {
+            background-color: plum;
+        }
+
+        .done {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="todaysTasks">
+            <h3>আজকের কাজ</h3>
+            <div class="card">
+                <span class="subject science">Science</span>
+                <h4>অধ্যায় ৫: বীজগণিত </h4>
+                <p>পৃষ্ঠা ১০২-১০৫ এর অনুশীলনী</p>
+                <span class="task pending">baki ache</span>
+            </div>
+
+            <div class="card">
+                <span class="subject bangla">bangla</span>
+                <h4>অধ্যায় ৫: বীজগণিত</h4>
+                <p>পৃষ্ঠা ১০২-১০৫ এর অনুশীলনী</p>
+                <span class="task pending">pending</span>
+            </div>
+
+            <div class="card">
+                <span class="subject english">English</span>
+                <h4>অধ্যায় ৫: বীজগণিত</h4>
+                <p>পৃষ্ঠা ১০২-১০৫ এর অনুশীলনী</p>
+                <span class="task done">done</span>
+            </div>
+
+        </div>
+
+        <div class="tommorow">
+            <h3>আগামীকালের কাজ</h3>
+            <div class="card">
+            <span class="subject physics"> Physics</span>
+            <h4>অধ্যায় ৫: বীজগণিত</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis.</p>
+            <span class="task pending">pending</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
