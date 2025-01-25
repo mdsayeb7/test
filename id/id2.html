@@ -1,0 +1,233 @@
+<!-- হোমওয়ার্ক ডেট যোগ করুন
+প্রায়োরিটি লেভেল যোগ করুন
+নতুন লেআউট ডিজাইন করুন
+নতুন সেকশন যোগ করুন (যেমন #notes, #reminders) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>হোমওয়ার্ক ট্র্যাকার</title>
+    <meta name="description" content="student home work management system">
+    <style>
+        .main {
+            background-color: #ffffff;
+        }
+
+        .user {
+            background-color: antiquewhite;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+        .todaystask {
+            background-color: aliceblue;
+            padding-left: 20px;
+            border-left: 4px solid #000;
+            border-radius: 20px;
+            max-width: 600px;
+            padding-top: 20px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+
+        .tommrowstask {
+            background-color: aliceblue;
+            padding-left: 20px;
+            border-left: 4px solid #000;
+            border-radius: 20px;
+            max-width: 600px;
+            padding-top: 20px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+
+        }
+
+        .finishedtask {
+            background-color: aliceblue;
+            padding-left: 20px;
+            border-left: 4px solid #000;
+            border-radius: 20px;
+            max-width: 600px;
+            padding-top: 20px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+
+
+        }
+
+        .taskcard {
+            padding: 20px;
+            background-color: rgb(164, 224, 108);
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .taskdetails {
+            background-color: azure;
+            padding: 8px;
+            border-radius: 4%;
+        }
+
+        .taskname {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: -10px;
+        }
+
+        .subject,
+        .priyority,
+        .taskstatus,
+        .hwdate {
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .science {
+            background-color: aquamarine;
+            font-weight: bold;
+        }
+
+        .history {
+            background-color: azure;
+        }
+
+        .bangla {
+            background-color: #66dac0;
+        }
+
+        .english {
+            background-color: rgb(177, 59, 43);
+        }
+
+        .math {
+            background-color: rgb(2, 113, 211);
+        }
+
+        .pending {
+            background-color: aqua;
+        }
+
+        .done {
+            background-color: green;
+        }
+
+        .low {
+            background-color: #00ffc8;
+        }
+
+        .high {
+            background-color: red;
+        }
+
+        .mid {
+            background-color: blanchedalmond;
+        }
+
+        .hwdate {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="user" id="userdetails">
+            <h3>হোমওয়ার্ক ট্র্যাকার</h3>
+            <p>user: user1</p>
+            <p>time: 2025-01-26 12:20:23</p>
+        </div>
+        <div class="todaystask">
+            <h2>Todays task</h2>
+            <div class="taskcard">
+                <span class="subject science">Science</span>
+                <span class="taskstatus pending">pending</span>
+                <span class="priyority low">low</span>
+                <span class="hwdate">24-01-2025</span>
+                <h4 class="taskname">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p class="taskdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illo
+                    perferendis ab ipsam, eos impedit quisquam eius tempore expedita, fugiat aut cupiditate nemo
+                    fuga atque libero facere porro! Fuga, possimus?</p>
+                <div class="notes">
+                    <p>Note: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, quisquam.</p>
+                </div>
+            </div>
+
+            <div class="taskcard">
+                <span class="subject history">history</span>
+                <span class="taskstatus pending">pending</span>
+                <span class="priyority high">high</span>
+                <span class="hwdate">24-01-2025</span>
+                <h4 class="taskname">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, in
+                    necessitatibus.</h4>
+                <p class="taskdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illo
+                    perferendis ab ipsam, eos impedit quisquam eius tempore expedita, fugiat aut cupiditate nemo
+                    fuga atque libero facere porro! Fuga, possimus?</p>
+            </div>
+
+            <div class="taskcard">
+                <span class="subject bangla">bangla</span>
+                <span class="taskstatus done">done</span>
+                <span class="priyority mid">mid</span>
+                <span class="hwdate">24-01-2025</span>
+                <h4 class="taskname">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, in
+                    necessitatibus.</h4>
+                <p class="taskdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illo
+                    perferendis ab ipsam, eos impedit quisquam eius tempore expedita, fugiat aut cupiditate nemo
+                    fuga atque libero facere porro! Fuga, possimus?</p>
+            </div>
+        </div>
+
+        <div class="tommrowstask">
+            <h2>Tommorow task</h2>
+            <div class="taskcard">
+                <span class="subject english">english</span>
+                <span class="taskstatus pending">pending</span>
+                <span class="priyority low">low</span>
+                <span class="hwdate">24-01-2025</span>
+                <h4 class="taskname">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, in
+                    necessitatibus.</h4>
+                <p class="taskdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illo
+                    perferendis ab ipsam, eos impedit quisquam eius tempore expedita, fugiat aut cupiditate nemo
+                    fuga atque libero facere porro! Fuga, possimus?</p>
+            </div>
+
+            <div class="taskcard">
+                <span class="subject math">math</span>
+                <span class="taskstatus pending">pending</span>
+                <span class="priyority low">low</span>
+                <span class="hwdate">24-01-2025</span>
+                <h4 class="taskname">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, in
+                    necessitatibus.</h4>
+                <p class="taskdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illo
+                    perferendis ab ipsam, eos impedit quisquam eius tempore expedita, fugiat aut cupiditate nemo
+                    fuga atque libero facere porro! Fuga, possimus?</p>
+            </div>
+        </div>
+
+        <div class="finishedtask">
+            <h2>Finished task</h2>
+            <div class="taskcard">
+                <span class="subject bangla">bangla</span>
+                <span class="taskstatus done">done</span>
+                <span class="priyority low">low</span>
+                <span class="hwdate">24-01-2025</span>
+                <h4 class="taskname">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, in
+                    necessitatibus.</h4>
+                <p class="taskdetails">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illo
+                    perferendis ab ipsam, eos impedit quisquam eius tempore expedita, fugiat aut cupiditate nemo
+                    fuga atque libero facere porro! Fuga, possimus?</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
